@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #1f2937;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.toggle {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #3f87ff, #00c6ff);
+  color: white;
+}
+
+.hero span {
+  color: #ffe600;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  border-left: 5px solid #3f87ff;
+  padding-left: 15px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #eef3ff;
+}
+
+/* PROJECTS */
+.project {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-left: 5px solid #3f87ff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #3f87ff;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #245fd6;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #ccc;
+}
+
+/* DARK MODE */
+.dark {
+  background: #121212;
+  color: #eee;
+}
+
+.dark .navbar,
+.dark footer {
+  background: #000;
+}
+
+.dark .card,
+.dark .project {
+  background: #1e1e1e;
+}
